@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>کاشانه</title>
+        <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+        <!--css link-->
+        <link rel="stylesheet" href="../css/main.css">
+
+    </head>
+    <body>
+        <!--header-->
+        <header class="main-header">
+            <div class="logo">
+                <span>کاشانه<span>KASHANA</span></span>
+            </div>
+            <nav class="nav-menu">
+                <a href="main-page.html" class="active">صفحه اصلی</a>
+                <a href="properties.html">املاک</a>
+                <a href="services.html">خدمات</a>
+                <a href="about us.html">درباره ما </a>
+                <a href="contact us.html">ارتباط با ما </a>
+            </nav>
+            <!--user action-->
+            <div class="user-actions">
+                <!--favorites-->
+                <a hraf="" class="favorite">
+                    <i class="fa-regular fa-heart"></i>
+                </a>
+                 <!--account-->
+            <div class="account">
+                <button class="account-btn">
+                    <i class="fa-regular fa-user"></i>
+                </button>
+                </div>
+                <div class="account-dropdown">
+                    <a href="">ورود</a><br>
+                    <a href="">ثبت نام</a>
+                </div>
+                 <div class="counselling">
+                    <button class="counselling-btn"> <span>درخواست مشاوره</span></button>
+
+                 </div>
+
+            </div>
+           
+        </header>
+
+        <!--hero section-->
+        <section class="hero-section">
+            <img src="../images/main image.png" class="main-image">
+            <div class="hero-content">
+                <h2>خانه‌ای بهتر، زندگی‌ای آرام‌تر</h2>
+                <h1>کاشانه همراه شما<br>در انتخاب بهترین ها</h1>
+                <p>خرید، فروش، گرو و کرایه انواع آپارتمان، ویلا و زمین در نواحی مختلف شهر هرات</p>
+            </div>
+
+            <div class="search-container">
+                <div class="search-input-group">
+                    <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                    <input type="text" id="keyword-search" placeholder="نام شهرک، جاده یا ناحیه...">
+
+                </div>
+                <div class="select-group">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <select id="district-select">
+                      <option value="">انتخاب ناحیه/محله</option>
+                      <option value="jada-wilayat"> جاده ولایت</option>
+                      <option value="darwaza-khosh"> دروازه خوش</option>
+                      <option value="shahrak-khadija">شهرک خدیجه کبری</option>
+                      <option value="firqa"> ساحه فرقه</option>
+                      <option value="mahtab"> مهتاب سلجوقی</option>
+                      <option value="jebril">جبرئیل</option>  
+                    </select>
+                </div>
+                <div class="select-group">
+                    <i class="fa-solid fa-money-bill-wave"></i>
+                    <select id="price-select">
+                        <option value="">رنج قیمت (افغانی/دلار)</option>
+                        <option value="low">اقتصادی و ارزان  </option>
+                        <option value="medium">قیمت متوسط  </option>
+                        <option value="high">لوکس و تجاری  </option>
+                    </select>
+                </div>
+                <div class="select-group">
+                    <i class="fa-solid fa-building"></i>
+                    <select id="type-select">
+                        <option value="">نوعیت ملک</option>
+                        <option value="apartment">آپارتمان مسکونی</option>
+                        <option value="villa"> خانه حویلی دار</option>
+                        <option value="commericla">مغازه و تجاری </option>
+                        <option value="land">زمین/نمره </option>
+                    </select>
+                </div>
+                <button class="btn-search" id="search-submit">
+                    <i class="fa-solid fa-magnifying-glass"></i>جستجو </button>
+            </div>
+        </section>
+            <!--our services-->
+        <section class="features-section">
+            <div class="feature-card">
+                <div class="feature-icon"><i class="fa-solid fa-handshake-angle"></i>
+                </div>
+                <div class="feature-info">
+                    <h4>مشاوره حقوقی</h4>
+                    <p>تنظیم سند رسمی و قباله با تضمین کامل</p>
+                </div>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon"><i class="fa-solid fa-map-location-dot"></i>
+                </div>
+
+                 <div class="feature-info">
+                <h4>پوشش کامل هرات</h4>
+                <p>دسترسی به فایل های انحصاری درتمام نواحی</p>
+            </div>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon"><i class="fa-solid fa-calculator"></i></div>
+                <div class="feature-info">
+                    <h4>قیمت گذاری کارشناسی</h4>
+                    <p>تضمین قیمت واقعی بازار بدون واسطه</p>
+                </div>
+            </div>
+        </section>
+
+        <!--favorite areas-->
+        <section class="container locations-section">
+            <div class="section-header">
+                <div>
+                    <h2>مناطق پرمتقاضی هرات</h2>
+                    <p>محبوب  ترین محله ها جهت سکونت و سرمایه گذاری</p>
+                </div>
+                <a href="#" class="view-all">همه محله ها<i class="fa-solid fa-chevron-left"></i></a>
+            </div>
+            <div class="locations-grid">
+                <div class="location-card">
+                    <img src="../images/welayat street.jpg" alt="جاده ولایت">
+
+                    <span class="location-tag">جاده ولایت</span>
+                </div>
+                 <div class="location-card">
+                    <img src="../images/jade mokhaberat.jpg" alt="جاده مخابرات" >
+                    <span class="location-tag">جاده مخابرات </span>
+                </div>
+                 <div class="location-card">
+                     <img src="../images/shahrenow.jpg" alt="شهر نو " >
+                    <span class="location-tag">شهرنو </span>
+                </div>
+                 <div class="location-card">
+                     <img src="../images/gazargah.jpg" alt="گذرگاه  " >
+                    <span class="location-tag">گذرگاه </span>
+                </div>
+                 <div class="location-card">
+                     <img src="../images/jebreil.jpg" alt="جبرئیل  " >
+                    <span class="location-tag">جبرئیل </span>
+                </div>
+                 
+            </div>
+
+        </section>
+
+        <section class="container properties-section">
+            <div class="section-header">
+                <div>
+                    <h2>آخرین آگهی های ثبت شده</h2>
+                    <p>بروزترین خانه‌ها و زمین‌های فروشی و اجاره‌ای در هرات  </p>
+                </div>
+                <a href="#" class="view-all">مشاهده لیست ملک ها<i class="fa-solid fa-chevron-left"></i></a>
+            </div>
+
+            <div class="properties-grid">
+                <!--first card-->
+                <div class="property-card">
+                    <div class="property-image">
+                       <img src="../images/first card/8.jpg" alt="نمای خانه" class="active">
+                       <img src="../images/first card/1.jpg" alt="اتاق خواب ">
+                       <img src="../images/first card/2.jpg" alt="اتاق نشیمن ">
+                       <img src="../images/first card/3.jpg" alt="اتاق خواب ">
+                       <img src="../images/first card/4.jpg" alt="آشپزخانه ">
+                       <img src="../images/first card/5.jpg" alt="دهلیز ">
+                       <img src="../images/first card/6.jpg" alt="مهمانخانه">
+                       <img src="../images/first card/7.jpg" alt="آشپزخانه">
+
+                        <button class="slider-btn prev">
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </button>
+                        <button class="slider-btn next">
+                            <i class="fa-solid fa-chevron-left"></i>
+                        </button>
+
+                        <span class="status-tag tag-sale">فروشی</span>
+                        <button class="btn-wishlist"><i class="fa-regular fa-heart"></i></button>
+                    </div>
+                </div>
+                <!--second card-->
+                <div class="property-card">
+                    <div class="property-image">
+                       <img src="../images/second card/nama.jpg"   alt="نمای خانه" class="active">
+                       <img src="../images/second card/1.jpg" alt="اتاق خواب ">
+                       <img src="../images/second card/2.jpg" alt="اتاق نشیمن ">
+                       <img src="../images/second card/3.jpg" alt="اتاق خواب ">
+                       <img src="../images/second card/4.jpg" alt="آشپزخانه ">
+                       <img src="../images/second card/5.jpg" alt="دهلیز ">
+                      
+                        <button class="slider-btn prev">
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </button>
+                        <button class="slider-btn next">
+                            <i class="fa-solid fa-chevron-left"></i>
+                        </button>
+                       
+                        <span class="status-tag tag-rent">رهن/ اجاره</span>
+                        <button class="btn-wishlist"><i class="fa-regular fa-heart"></i></button>
+                    </div>
+                </div>
+                 <!--thirdcard-->
+                <div class="property-card">
+                    <div class="property-image">
+                       <img src="../images/second card/nama.jpg"   alt="نمای خانه" class="active">
+                       <img src="../images/second card/1.jpg" alt="اتاق خواب ">
+                       <img src="../images/second card/2.jpg" alt="اتاق نشیمن ">
+                       <img src="../images/second card/3.jpg" alt="اتاق خواب ">
+                       <img src="../images/second card/4.jpg" alt="آشپزخانه ">
+                       <img src="../images/second card/5.jpg" alt="دهلیز ">
+                      
+                        <button class="slider-btn prev">
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </button>
+                        <button class="slider-btn next">
+                            <i class="fa-solid fa-chevron-left"></i>
+                        </button>
+                        <span class="status-tag tag-sale">فروشی </span>
+                        <button class="btn-wishlist"><i class="fa-regular fa-heart"></i></button>
+                    </div>
+                </div>
+                 <!--fourthcard-->
+                <div class="property-card">
+                    <div class="property-image">
+                         <img src="../images/second card/nama.jpg"   alt="نمای خانه" class="active">
+                       <img src="../images/second card/1.jpg" alt="اتاق خواب ">
+                       <img src="../images/second card/2.jpg" alt="اتاق نشیمن ">
+                       <img src="../images/second card/3.jpg" alt="اتاق خواب ">
+                       <img src="../images/second card/4.jpg" alt="آشپزخانه ">
+                       <img src="../images/second card/5.jpg" alt="دهلیز ">
+                      
+                        <button class="slider-btn prev">
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </button>
+                        <button class="slider-btn next">
+                            <i class="fa-solid fa-chevron-left"></i>
+                        </button>
+
+                       
+                        <span class="status-tag tag-sale">فروشی </span>
+                        <button class="btn-wishlist"><i class="fa-regular fa-heart"></i></button>
+                    </div>
+                </div>
+                <!--fifth card-->
+                 <div class="property-card">
+                    <div class="property-image">
+                      <img src="../images/second card/nama.jpg"   alt="نمای خانه" class="active">
+                       <img src="../images/second card/1.jpg" alt="اتاق خواب ">
+                       <img src="../images/second card/2.jpg" alt="اتاق نشیمن ">
+                       <img src="../images/second card/3.jpg" alt="اتاق خواب ">
+                       <img src="../images/second card/4.jpg" alt="آشپزخانه ">
+                       <img src="../images/second card/5.jpg" alt="دهلیز ">
+                      
+                        <button class="slider-btn prev">
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </button>
+                        <button class="slider-btn next">
+                            <i class="fa-solid fa-chevron-left"></i>
+                        </button>
+                       
+                        <span class="status-tag tag-sale">فروشی</span>
+                        <button class="btn-wishlist"><i class="fa-regular fa-heart"></i></button>
+                    </div>
+                </div>
+                <!--sixth card-->
+                <div class="property-card">
+                    <div class="property-image">
+                      <img src="../images/second card/nama.jpg"   alt="نمای خانه" class="active">
+                       <img src="../images/second card/1.jpg" alt="اتاق خواب ">
+                       <img src="../images/second card/2.jpg" alt="اتاق نشیمن ">
+                       <img src="../images/second card/3.jpg" alt="اتاق خواب ">
+                       <img src="../images/second card/4.jpg" alt="آشپزخانه ">
+                       <img src="../images/second card/5.jpg" alt="دهلیز ">
+                      
+                        <button class="slider-btn prev">
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </button>
+                        <button class="slider-btn next">
+                            <i class="fa-solid fa-chevron-left"></i>
+                        </button>
+                       
+                        <span class="status-tag tag-rent">رهن/ اجاره</span>
+                        <button class="btn-wishlist"><i class="fa-regular fa-heart"></i></button>
+                    </div>
+                </div>
+                 <!--seventh card-->
+                <div class="property-card">
+                    <div class="property-image">
+                       <img src="../images/second card/nama.jpg"   alt="نمای خانه" class="active">
+                       <img src="../images/second card/1.jpg" alt="اتاق خواب ">
+                       <img src="../images/second card/2.jpg" alt="اتاق نشیمن ">
+                       <img src="../images/second card/3.jpg" alt="اتاق خواب ">
+                       <img src="../images/second card/4.jpg" alt="آشپزخانه ">
+                       <img src="../images/second card/5.jpg" alt="دهلیز ">
+                      
+                        <button class="slider-btn prev">
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </button>
+                        <button class="slider-btn next">
+                            <i class="fa-solid fa-chevron-left"></i>
+                        </button>
+                       
+                        <span class="status-tag tag-sale">فروشی </span>
+                        <button class="btn-wishlist"><i class="fa-regular fa-heart"></i></button>
+                    </div>
+                </div>
+                 <!--eighth card-->
+                <div class="property-card">
+                    <div class="property-image">
+                      <img src="../images/second card/nama.jpg"   alt="نمای خانه" class="active">
+                       <img src="../images/second card/1.jpg" alt="اتاق خواب ">
+                       <img src="../images/second card/2.jpg" alt="اتاق نشیمن ">
+                       <img src="../images/second card/3.jpg" alt="اتاق خواب ">
+                       <img src="../images/second card/4.jpg" alt="آشپزخانه ">
+                       <img src="../images/second card/5.jpg" alt="دهلیز ">
+                      
+                        <button class="slider-btn prev">
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </button>
+                        <button class="slider-btn next">
+                            <i class="fa-solid fa-chevron-left"></i>
+                        </button>
+                       
+                        <span class="status-tag tag-sale">فروشی </span>
+                        <button class="btn-wishlist"><i class="fa-regular fa-heart"></i></button>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </section>
+
+        <!--footer-->
+        <footer class="main-footer">
+            <div  class="footer-container">
+                <!--footer container-->
+                <div class="footer-block footer-about">
+                    <h4>آژانس املاک کاشانه </h4>
+                    <p>بزرگترین و مطمئن‌ترین بانک اطلاعاتی املاک و مستغلات در ولایت هرات. ما شما را در خرید، فروش، رهن و اجاره خانه حویلی‌دار، آپارتمان و زمین در تمامی نواحی هرات یاری می‌کنیم.</p>
+  
+                </div>
+                 <!--quick access-links-->
+                <div class="footer-block footer-links">
+                    <h4>دسترسی سریع</h4>
+                    <ul>
+                        <li>
+                            <a href="#"><i class="fa-solid fa-chevron-left"></i>صفحه اصلی</a>
+                        </li>
+                         <li>
+                            <a href="#"><i class="fa-solid fa-chevron-left"></i>خانه های فروشی </a>
+                        </li>
+                         <li>
+                            <a href="#"><i class="fa-solid fa-chevron-left"></i>املاک کرایی و گروی </a>
+                        </li>
+                        
+                    </ul>
+                </div>
+                    <!--call information-->
+                <div class="footer-block footer-contact">
+                    <h4>ارتباط با ما</h4>
+                    <p><i class="fa-solid fa-location-dot"></i>هرات، جاده ولایت، ساختمان تجاری صدف، طبقه اول</p>
+                    <p><i class="fa-solid fa-phone"></i>0795678965/0788403040</p>
+                    <p><i class="fa-solid fa-envelope"></i>heart-amlak@gmail.com</p>
+                   <!--social programs-->
+                    <div class="footer-socials">
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                         <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                          <a href="#"><i class="fa-brands fa-telegram"></i></a>
+                    </div>
+                </div>
+
+            </div>
+        </footer>
+
+
+
+
+
+
+
+    </body>
+
+
+</html>
