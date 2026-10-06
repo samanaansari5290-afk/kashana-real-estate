@@ -173,7 +173,7 @@ body{
    
 }
 .account-dropdown a:hover{
-    background-color: #eef5fa;
+   color:var(--secondary-color);
     font-weight: bold;
 
 }
@@ -695,7 +695,7 @@ body{
     .nav-menu{
         display: none;
     }
-    .na-menu.show a::before{
+    .nav-menu.show a::before{
         display: none;
     }
     .nav-menu.show::after{
@@ -704,7 +704,7 @@ body{
         bottom: -3px;
     }
 
-    .na-menu.show a:hover::after{
+    .nav-menu.show a:hover::after{
         width: 100%;
         right: 0;
     }
@@ -722,6 +722,12 @@ body{
         height: 35px;
         font-size: 11px;
     }
+
+    .features-section{
+        flex-wrap: wrap;
+    }
+
+
     .properties-grid{
         grid-template-columns: repeat(2, 1fr);
         gap:12px;
