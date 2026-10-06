@@ -32,6 +32,7 @@ body{
     padding: 15px 50px;
     background: var(--bg-light);
     box-shadow: 0 2px 15px rgba(0,0,0,0.05);
+    position: relative;
 }
 .logo{
     display: flex;
@@ -203,6 +204,30 @@ body{
 .counselling-btn:hover span{
     transform: translateY(-1px);
 }
+.menu-toggle{
+    display: none;
+    background: none;
+    border: none;
+    color: var(--primary-color);
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.nav-menu.show{
+    display: flex;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 100%;
+    background-color: var(--bg-light);
+    flex-direction: column;
+    align-items: center;
+    padding: 15px 0;
+    box-shadow: 0 5px 15px rgba(0,0,0,0,08);
+    z-index: 999;
+
+}
+
 /*hero*/
 .hero-section{
     width:100%;
@@ -652,6 +677,59 @@ body{
  }
 
  @media (max-width:768px){
+    .main-header{
+        padding: 12px 15px;
+        gap: 10px;
+    }
+    .logo{
+        font-size: 24px;
+    }
+    .logo span span{
+        font-size: 12px;
+    }
+    .menu-toggle{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .nav-menu{
+        display: none;
+    }
+    .na-menu.show a::before{
+        display: none;
+    }
+    .nav-menu.show::after{
+        right: 0;
+        width: 0;
+        bottom: -3px;
+    }
+
+    .na-menu.show a:hover::after{
+        width: 100%;
+        right: 0;
+    }
+
+    .user-actions{
+        gap: 8px;
+    }
+    .favorite, .account-btn{
+        width: 32px;
+        height: 32px;
+        font-size: 15px;
+    }
+    .counselling-btn{
+         width: 100px;
+        height: 35px;
+        font-size: 11px;
+    }
+    .properties-grid{
+        grid-template-columns: repeat(2, 1fr);
+        gap:12px;
+    }
+    .locations-grid{
+        border-image-repeat:(2, 1fr);
+        gap:12px;
+    }
     .footer-container{
         flex-direction: column;
         gap: 30px;
