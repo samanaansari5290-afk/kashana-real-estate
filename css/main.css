@@ -180,6 +180,8 @@ body{
 .account-dropdown.show{
     display: block !important;
 }
+
+
 .counselling-btn{
     background:var(--secondary-color);
     color:var(--primary-color);
@@ -467,14 +469,14 @@ body{
     box-shadow: 0 4px 15px rgba(0,0,0,0.02);
  }
  .property-image{
-    height: 200px;
+    height: 280px;
     position: relative;
     padding: 0px;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     overflow: hidden;
-    aspect-ratio: 4/3;
+   
  }
  .property-image img{
     position: absolute;
@@ -556,6 +558,65 @@ body{
     z-index: 1;
  }
 
+ /*property-info*/
+
+ .property-info{
+    padding: 15px;
+    text-align: right;
+ }
+
+ .property-info h3{
+    font-size: 16px;
+    margin: 0 0 10px;
+    color: var(--primary-color);
+ }
+
+ .property-location{
+    font-size: 13px;
+    color: #777;
+    margin-bottom: 15px;
+ }
+ .property-location i{
+    margin-left: 5px;
+ }
+ .property-details{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:8px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #eee;
+    color: #777;
+    font-size: 13px;
+ }
+ .property-details span{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+ }
+ .property-details i{
+    color: var(--secondary-color);
+    font-size: 15px;
+ }
+ .property-price{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+    padding-top: 12px;
+    font-size: 12px;
+    color: #777;
+ }
+ .property-price strong{
+    color: var(--primary-color);
+    font-size: 15px;
+ }
+ .properties-grid{
+     display: grid;
+     grid-template-columns:repeat(4, 1fr);
+     gap: 20px;
+ }
+ 
  /*footer*/
  .main-footer{
     background-color: #1a252f;
@@ -759,3 +820,42 @@ body{
         justify-content: center;
     }
  }
+
+ /*property details page*/
+ 
+ @media(max-width:600px){
+    .property-details-container{
+        margin: 20px auto;
+        padding: 15px;
+    }
+    .property-information h2{
+        font-size: 21px;
+    }
+    .property-price strong{
+        font-size: 17px;
+    }
+   
+ }
+
+ /*login notic*/
+
+ .login-notice {
+    position: fixed;
+    top: 25px;
+    right: 50%;
+    transform: translateX(50%);
+    background-color: #17324D;
+    color: white;
+    padding: 14px 24px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    z-index: 9999;
+    display: none;
+    font-family: inherit;
+    text-align: center;
+}
+
+.login-notice.show {
+    display: block;
+}
+

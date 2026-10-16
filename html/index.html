@@ -10,6 +10,10 @@
 
     </head>
     <body>
+
+        <div id="login-notice" class="login-notice">
+    لطفاً ابتدا وارد حساب کاربری خود شوید.
+</div>
         <!--header-->
         <header class="main-header">
             <div class="logo">
@@ -32,15 +36,26 @@
                     <i class="fa-regular fa-heart"></i>
                 </a>
                  <!--account-->
-            <div class="account">
-                <button class="account-btn">
-                    <i class="fa-regular fa-user"></i>
-                </button>
-                 <div class="account-dropdown">
-                    <a href="">ورود</a><br>
-                    <a href="">ثبت نام</a>
-                </div>
-                </div>
+           <div class="account">
+
+    <button class="account-btn" type="button"
+            aria-label="حساب کاربری">
+        <i class="fa-regular fa-user"></i>
+        <span class="user-initials" hidden></span>
+    </button>
+
+    <div class="account-dropdown">
+        <a href="">
+            ثبت‌نام
+        </a>
+
+        <a href="">
+            ورود
+        </a>
+
+    </div>
+
+</div>
                 
                  <div class="counselling">
                     <button class="counselling-btn"> <span>درخواست مشاوره</span></button>
@@ -178,7 +193,9 @@
 
             <div class="properties-grid">
                 <!--first card-->
-                <div class="property-card">
+                <div class="property-card"
+                data-id="1"
+                onclick="openPropertyDetails(1)">
                     <div class="property-image">
                        <img src="../images/first card/8.jpg" alt="نمای خانه" class="active">
                        <img src="../images/first card/1.jpg" alt="اتاق خواب ">
@@ -197,11 +214,30 @@
                         </button>
 
                         <span class="status-tag tag-sale">فروشی</span>
-                        <button class="btn-wishlist"><i class="fa-regular fa-heart"></i></button>
+                        <button class="btn-wishlist">
+                         <i class="fa-regular fa-heart"></i>
+                          </button>
                     </div>
-                </div>
+                      <h3>آپارتمان فروشی سه منزله </h3>
+                        <p class="property-location">
+                            <i class="fa-solid fa-location-dot"></i>
+                         ناحیه یک، جاده ولایت
+                        </p>
+                        <div class="property-details">
+                            <span title="اتاق خواب"><i class="fa-solid fa-bed"></i>  2 </span>
+                             <span title="حمام "><i class="fa-solid fa-bath"></i>  1 </span>
+                              <span title="متراژ "><i class="fa-solid fa-maximize"></i>  180متر </span>
+                        </div>
+                        <div class="property-price">
+                             <span>قیمت</span>
+                             <strong>50,800,000</strong>
+                        </div>
+
+                    </div>
+                
                 <!--second card-->
                 <div class="property-card">
+               
                     <div class="property-image">
                        <img src="../images/second card/nama.jpg"   alt="نمای خانه" class="active">
                        <img src="../images/second card/1.jpg" alt="اتاق خواب ">
@@ -217,14 +253,31 @@
                             <i class="fa-solid fa-chevron-left"></i>
                         </button>
                        
-                        <span class="status-tag tag-rent">رهن/ اجاره</span>
+                        <span class="status-tag tag-rent">گروی/  کرایی</span>
                         <button class="btn-wishlist"><i class="fa-regular fa-heart"></i></button>
+                    </div>
+                     <div class="property-info">
+                        <h3>آپارتمان کرایی چهار منزله </h3>
+                        <p class="property-location">
+                            <i class="fa-solid fa-location-dot"></i>
+                              ناحیه سیزده،  جبرئیل
+                        </p>
+                        <div class="property-details">
+                            <span title="اتاق خواب"><i class="fa-solid fa-bed"></i>  3 </span>
+                             <span title="حمام "><i class="fa-solid fa-bath"></i>  2 </span>
+                              <span title="متراژ "><i class="fa-solid fa-maximize"></i>  200متر </span>
+                        </div>
+                        <div class="property-price">
+                             <span>قیمت</span>
+                             <strong>10,000</strong>
+                        </div>
+
                     </div>
                 </div>
                  <!--thirdcard-->
                 <div class="property-card">
                     <div class="property-image">
-                       <img src="../images/second card/nama.jpg"   alt="نمای خانه" class="active">
+                       <img src="../images/third card/NAMA.jpg"   alt="نمای خانه" class="active">
                        <img src="../images/second card/1.jpg" alt="اتاق خواب ">
                        <img src="../images/second card/2.jpg" alt="اتاق نشیمن ">
                        <img src="../images/second card/3.jpg" alt="اتاق خواب ">
@@ -240,11 +293,28 @@
                         <span class="status-tag tag-sale">فروشی </span>
                         <button class="btn-wishlist"><i class="fa-regular fa-heart"></i></button>
                     </div>
+                     <div class="property-info">
+                        <h3>آپارتمان فروشی سه منزله </h3>
+                        <p class="property-location">
+                            <i class="fa-solid fa-location-dot"></i>
+                         ناحیه یک، جاده ولایت
+                        </p>
+                        <div class="property-details">
+                            <span title="اتاق خواب"><i class="fa-solid fa-bed"></i>  2 </span>
+                             <span title="حمام "><i class="fa-solid fa-bath"></i>  1 </span>
+                              <span title="متراژ "><i class="fa-solid fa-maximize"></i>  180متر </span>
+                        </div>
+                        <div class="property-price">
+                             <span>قیمت</span>
+                             <strong>2,800,000</strong>
+                        </div>
+
+                    </div>
                 </div>
                  <!--fourthcard-->
                 <div class="property-card">
                     <div class="property-image">
-                         <img src="../images/second card/nama.jpg"   alt="نمای خانه" class="active">
+                         <img src="../images/forth card/NAMA.jpg"   alt="نمای خانه" class="active">
                        <img src="../images/second card/1.jpg" alt="اتاق خواب ">
                        <img src="../images/second card/2.jpg" alt="اتاق نشیمن ">
                        <img src="../images/second card/3.jpg" alt="اتاق خواب ">
@@ -262,11 +332,28 @@
                         <span class="status-tag tag-sale">فروشی </span>
                         <button class="btn-wishlist"><i class="fa-regular fa-heart"></i></button>
                     </div>
+                     <div class="property-info">
+                        <h3>آپارتمان فروشی سه منزله </h3>
+                        <p class="property-location">
+                            <i class="fa-solid fa-location-dot"></i>
+                         ناحیه یک، جاده ولایت
+                        </p>
+                        <div class="property-details">
+                            <span title="اتاق خواب"><i class="fa-solid fa-bed"></i>  2 </span>
+                             <span title="حمام "><i class="fa-solid fa-bath"></i>  1 </span>
+                              <span title="متراژ "><i class="fa-solid fa-maximize"></i>  180متر </span>
+                        </div>
+                        <div class="property-price">
+                             <span>قیمت</span>
+                             <strong>2,800,000</strong>
+                        </div>
+
+                    </div>
                 </div>
                 <!--fifth card-->
                  <div class="property-card">
                     <div class="property-image">
-                      <img src="../images/second card/nama.jpg"   alt="نمای خانه" class="active">
+                      <img src="../images/fifth card/nama.jpg"   alt="نمای خانه" class="active">
                        <img src="../images/second card/1.jpg" alt="اتاق خواب ">
                        <img src="../images/second card/2.jpg" alt="اتاق نشیمن ">
                        <img src="../images/second card/3.jpg" alt="اتاق خواب ">
@@ -283,11 +370,28 @@
                         <span class="status-tag tag-sale">فروشی</span>
                         <button class="btn-wishlist"><i class="fa-regular fa-heart"></i></button>
                     </div>
+                     <div class="property-info">
+                        <h3>آپارتمان فروشی سه منزله </h3>
+                        <p class="property-location">
+                            <i class="fa-solid fa-location-dot"></i>
+                         ناحیه یک، جاده ولایت
+                        </p>
+                        <div class="property-details">
+                            <span title="اتاق خواب"><i class="fa-solid fa-bed"></i>  2 </span>
+                             <span title="حمام "><i class="fa-solid fa-bath"></i>  1 </span>
+                              <span title="متراژ "><i class="fa-solid fa-maximize"></i>  180متر </span>
+                        </div>
+                        <div class="property-price">
+                             <span>قیمت</span>
+                             <strong>2,800,000</strong>
+                        </div>
+
+                    </div>
                 </div>
                 <!--sixth card-->
                 <div class="property-card">
                     <div class="property-image">
-                      <img src="../images/second card/nama.jpg"   alt="نمای خانه" class="active">
+                      <img src="../images/NAMA7TH.jpg"   alt="نمای خانه" class="active">
                        <img src="../images/second card/1.jpg" alt="اتاق خواب ">
                        <img src="../images/second card/2.jpg" alt="اتاق نشیمن ">
                        <img src="../images/second card/3.jpg" alt="اتاق خواب ">
@@ -301,14 +405,31 @@
                             <i class="fa-solid fa-chevron-left"></i>
                         </button>
                        
-                        <span class="status-tag tag-rent">رهن/ اجاره</span>
+                        <span class="status-tag tag-rent">گروی/  کرایی</span>
                         <button class="btn-wishlist"><i class="fa-regular fa-heart"></i></button>
+                    </div>
+                     <div class="property-info">
+                        <h3>ویلای گروی</h3>
+                        <p class="property-location">
+                            <i class="fa-solid fa-location-dot"></i>
+                         ناحیه یک، جاده ولایت
+                        </p>
+                        <div class="property-details">
+                            <span title="اتاق خواب"><i class="fa-solid fa-bed"></i>  2 </span>
+                             <span title="حمام "><i class="fa-solid fa-bath"></i>  1 </span>
+                              <span title="متراژ "><i class="fa-solid fa-maximize"></i>  180متر </span>
+                        </div>
+                        <div class="property-price">
+                             <span>قیمت</span>
+                             <strong>2,800,000</strong>
+                        </div>
+
                     </div>
                 </div>
                  <!--seventh card-->
                 <div class="property-card">
                     <div class="property-image">
-                       <img src="../images/second card/nama.jpg"   alt="نمای خانه" class="active">
+                       <img src="../images/NAMA.jpg"   alt="نمای خانه" class="active">
                        <img src="../images/second card/1.jpg" alt="اتاق خواب ">
                        <img src="../images/second card/2.jpg" alt="اتاق نشیمن ">
                        <img src="../images/second card/3.jpg" alt="اتاق خواب ">
@@ -324,12 +445,29 @@
                        
                         <span class="status-tag tag-sale">فروشی </span>
                         <button class="btn-wishlist"><i class="fa-regular fa-heart"></i></button>
+                    </div>
+                     <div class="property-info">
+                        <h3>آپارتمان فروشی سه منزله </h3>
+                        <p class="property-location">
+                            <i class="fa-solid fa-location-dot"></i>
+                         ناحیه یک، جاده ولایت
+                        </p>
+                        <div class="property-details">
+                            <span title="اتاق خواب"><i class="fa-solid fa-bed"></i>  2 </span>
+                             <span title="حمام "><i class="fa-solid fa-bath"></i>  1 </span>
+                              <span title="متراژ "><i class="fa-solid fa-maximize"></i>  180متر </span>
+                        </div>
+                        <div class="property-price">
+                             <span>قیمت</span>
+                             <strong>2,800,000</strong>
+                        </div>
+
                     </div>
                 </div>
                  <!--eighth card-->
                 <div class="property-card">
                     <div class="property-image">
-                      <img src="../images/second card/nama.jpg"   alt="نمای خانه" class="active">
+                      <img src="../images/NAMA8TH.jpg"   alt="نمای خانه" class="active">
                        <img src="../images/second card/1.jpg" alt="اتاق خواب ">
                        <img src="../images/second card/2.jpg" alt="اتاق نشیمن ">
                        <img src="../images/second card/3.jpg" alt="اتاق خواب ">
@@ -346,9 +484,24 @@
                         <span class="status-tag tag-sale">فروشی </span>
                         <button class="btn-wishlist"><i class="fa-regular fa-heart"></i></button>
                     </div>
+                     <div class="property-info">
+                        <h3>آپارتمان فروشی سه منزله </h3>
+                        <p class="property-location">
+                            <i class="fa-solid fa-location-dot"></i>
+                         ناحیه یک، جاده ولایت
+                        </p>
+                        <div class="property-details">
+                            <span title="اتاق خواب"><i class="fa-solid fa-bed"></i>  2 </span>
+                             <span title="حمام "><i class="fa-solid fa-bath"></i>  1 </span>
+                              <span title="متراژ "><i class="fa-solid fa-maximize"></i>  180متر </span>
+                        </div>
+                        <div class="property-price">
+                             <span>قیمت</span>
+                             <strong>2,800,000</strong>
+                        </div>
+
+                    </div>
                 </div>
-
-
 
             </div>
         </section>
@@ -378,7 +531,8 @@
                         
                     </ul>
                 </div>
-                    <!--call information-->
+                    
+                <!--call information-->
                 <div class="footer-block footer-contact">
                     <h4>ارتباط با ما</h4>
                     <p><i class="fa-solid fa-location-dot"></i>هرات، جاده ولایت، ساختمان تجاری صدف، طبقه اول</p>
@@ -394,13 +548,13 @@
 
             </div>
         </footer>
-
+    
 
 
 
 
     <script src="../javascript/javascript.js"></script>
-
+    
     </body>
      
 </html>
